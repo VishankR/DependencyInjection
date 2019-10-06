@@ -1,0 +1,16 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+	"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+	<bean id="e" class="beans.Engine"> 
+		<!--  Setter based Injection  -->
+		     <property name="model" value="2"> </property>
+		      <property name="year" value="2015"> </property>
+		      <property name="type" value="petrol"> </property> 
+		      
+		 <!-- Constructor based Injection                                                       
+		<constructor-arg value="2" type="String" index="0"></constructor-arg>
+		<constructor-arg value="2015" type="int" index="1"></constructor-arg>
+		<constructor-arg value="Petrol" type="String" index="2"></constructor-arg>
+		   --> 
+	</bean>
+</beans>
