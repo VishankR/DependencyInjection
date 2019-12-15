@@ -1,0 +1,22 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+	"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+<bean id="fr1" class="beans.Fruits">
+	<property name="names">
+		<list>
+			<value>Appples</value>
+			<value>Grapes</value>
+			<value>Mangoes</value>
+		</list>
+	</property>
+</bean>
+	<bean id="fr2" class="beans.Fruits">
+		<property name="names">
+			<list>
+				<value>Oranges</value>
+				<value>Pineapple</value>
+				<value>Guava</value>
+			</list>
+		</property>
+	</bean>
+</beans>
