@@ -4,12 +4,6 @@ public class Engine {
 	private String model;
 	private int year;
 	private String type;
-	public void setType(String type) {
-		this.type = type;
-	}
-	public void setYear(int year) {
-		this.year = year;
-	}
 	public Engine()
 	{
 	}
@@ -20,6 +14,15 @@ public class Engine {
 		this.year=year;
 		this.type=type;
 	}
+	public void setType(String type) {
+		this.type = type;
+	}
+	public void setYear(int year) {
+		this.year = year;
+	}
+	public void setModel(String model) {
+		this.model = model;
+	}
 	public String getModel() {
 		return model;
 	}
@@ -28,8 +31,5 @@ public class Engine {
 	}
 	public String getType() {
 		return type;
-	}
-	public void setModel(String model) {
-		this.model = model;
 	}
 }
