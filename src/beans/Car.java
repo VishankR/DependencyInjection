@@ -1,9 +1,17 @@
 package beans;
 
+import java.util.Iterator;
+import java.util.Set;
+
+@SuppressWarnings("rawtypes")
 public class Car {
 	private Fruits[] fruits;
 	private Engine engine;
 	private String carname;
+	private Collection co;
+	public void setCo(Collection co) {
+		this.co = co;
+	}
 	public void setEngine(Engine engine) {
 		this.engine = engine;
 	}
@@ -23,5 +31,24 @@ public class Car {
 				System.out.println(fruits[i].getNames()[j]);
 			}
 		}
+		Iterator itr1 = co.getVegetables().iterator();
+		Iterator itr2 = co.getCricketers().iterator();
+		System.out.println("Vegetables : ");
+	    while(itr1.hasNext())
+	    {
+	    	System.out.println(itr1.next());
+	    }
+	    System.out.println("Cricketers : ");
+	    while(itr2.hasNext())
+	    {
+	    	System.out.println(itr2.next());
+	    }
+	    System.out.println("Countries : ");
+	    Set sett=co.getCountries().entrySet();
+	    Iterator itr3 = sett.iterator();
+	    while(itr3.hasNext())
+	    {
+	    	System.out.println(itr3.next());
+	    }
 	}
 }

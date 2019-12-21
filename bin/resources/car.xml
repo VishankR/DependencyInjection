@@ -1,7 +1,7 @@
 <!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
 	"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
 <beans>
-	<bean id="c" class="beans.Car">
+	<bean id="car" class="beans.Car">
 		<property name="carname" value="Audi"></property>  <!-- Primary data type so using value attribute -->
 
 		<property name="engine" ref="e"></property>        <!--Secondary data type so either ref or obj -->
@@ -11,6 +11,7 @@
 				<ref bean="fr2" />
 			</list>
 		</property>
+		<property name="co" ref="c"></property>
 
 		<!-- using direct obj instead of ref (using Inner Bean) <property name="engine"> 
 			<bean class="beans.Engine"> <property name="model" value="2"> </property> 

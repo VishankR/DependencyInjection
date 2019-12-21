@@ -16,9 +16,9 @@ public class Client {
 		t.Hello("Vishank");*/
 		
 		
-		String[] files = {"resources/car.xml","resources/engine.xml", "resources/fruits.xml"};
+		String[] files = {"resources/car.xml","resources/engine.xml", "resources/fruits.xml", "resources/collection.xml"};
 		ApplicationContext context = new ClassPathXmlApplicationContext(files);
-		Car c = (Car) context.getBean("c");
+		Car c = (Car) context.getBean("car");
 		((ClassPathXmlApplicationContext) context).close();
 		c.print();
 	}
