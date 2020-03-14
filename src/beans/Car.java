@@ -5,10 +5,17 @@ import java.util.Set;
 
 @SuppressWarnings("rawtypes")
 public class Car {
-	private Fruits[] fruits;
-	private Engine engine;
-	private String carname;
-	private Collection co;
+	private Fruits[] fruits;  //Secondary array
+	private Engine engine;    //Secondary DataType
+	private String carname;   //Primary DataType
+	private Collection co;    //Collections
+	private Collection cfsc;  //Specific collection and properties	
+	public Collection getCfsc() {
+		return cfsc;
+	}
+	public void setCfsc(Collection cfsc) {
+		this.cfsc = cfsc;
+	}
 	public void setCo(Collection co) {
 		this.co = co;
 	}
@@ -50,5 +57,7 @@ public class Car {
 	    {
 	    	System.out.println(itr3.next());
 	    }
+	    System.out.println("Vector "+cfsc.getVec().get(0).toString());
+	    System.out.println("Properties "+cfsc.getPro().getProperty("user"));
 	}
 }

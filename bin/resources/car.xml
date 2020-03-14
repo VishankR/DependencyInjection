@@ -17,6 +17,7 @@
 			<bean class="beans.Engine"> <property name="model" value="2"> </property> 
 			<property name="year" value="2015"> </property> <property name="type" value="petrol"> 
 			</property> </bean> </property> -->
+		<property name="cfsc" ref="cc"></property>
 	</bean>
 
 
